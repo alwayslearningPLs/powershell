@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "first": {
+      "type": "string",
+      "defaultValue": "hello",
+      "allowedValues": ["hello", "bye"],
+      "metadata": {
+        "description": "this is the greeting"
+      }
+    },
+    "number": {
+      "type": "int",
+      "defaultValue": 2,
+      "minValue": 1,
+      "maxValue": 10
+    },
+    "last": {
+      "type": "string",
+      "defaultValue": "Pedro",
+      "minLength": 3,
+      "maxLength": 100
+    }
+  },
+  "variables": {},
+  "functions": [],
+  "resources": [],
+  "outputs": {}
+}
